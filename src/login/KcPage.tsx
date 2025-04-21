@@ -1,3 +1,8 @@
+/* Here is what i changed*/
+import "./main.css";
+
+
+
 import { Suspense, lazy } from "react";
 import type { ClassKey } from "keycloakify/login";
 import type { KcContext } from "./KcContext";
@@ -7,6 +12,7 @@ import Template from "keycloakify/login/Template";
 const UserProfileFormFields = lazy(
     () => import("keycloakify/login/UserProfileFormFields")
 );
+
 
 const doMakeUserConfirmPassword = true;
 
