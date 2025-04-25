@@ -11,7 +11,7 @@ A custom Keycloak login theme inspired by *The Stormlight Archive*, built with [
 
 ### Keycloak 22 – 26 (Quarkus distribution)
 
-1. Grab the latest `keycloak-theme-for-kc-22-to-25.jar` from the [releases](https://github.com/r-neuschulz/stormcloak/releases).  
+1. Grab the latest `keycloak-theme-for-kc-22-to-26.jar` from the [releases](https://github.com/r-neuschulz/stormcloak/releases).  
 2. Copy it into your Keycloak installation:  
    ```bash
    cp keycloak-theme-for-kc-22-to-25.jar $KC_HOME/providers/
@@ -51,10 +51,10 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - ./keycloak-theme-for-kc-22-to-25.jar:/opt/keycloak/providers/keycloak-theme-for-kc-22-to-25.jar
+      - ./keycloak-theme-for-kc-22-to-25.jar:/opt/keycloak/providers/keycloak-theme-for-kc-22-to-26.jar
 ```
 
-Then, you can just bring the theme up.
+Then, you can bring the theme up, as usual with.
 
 ```bash
 docker-compose up
