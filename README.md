@@ -1,4 +1,4 @@
-A Stormlight Archive themed Keycloak Login Field.
+A Stormlight Archive themed Keycloak Login Field, build with keycloakify.
 
 # Testing the theme locally
 
