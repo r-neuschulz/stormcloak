@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Capa_2"
+   viewBox="0 0 386.86 9.74"
+   version="1.1"
+   sodipodi:docname="hr.svg"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview145"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="1.693119"
+     inkscape:cx="189.59092"
+     inkscape:cy="-13.289083"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Capa_2" />
+  <defs
+     id="defs137">
+    <style
+       id="style132">
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #c89b56;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath
+       id="clippath">
+      <rect
+         class="cls-1"
+         width="386.86"
+         height="9.74"
+         id="rect134" />
+    </clipPath>
+  </defs>
+  <g
+     id="Capa_1-2"
+     data-name="Capa_1">
+    <g
+       class="cls-3"
+       clip-path="url(#clippath)"
+       id="g141">
+      <path
+         id="path139"
+         class="cls-2"
+         d="M 8.1699219,3.6367188 C 7.8539847,3.6503125 7.5517966,3.6872657 7.2792969,3.7597656 5.8492983,4.1297653 4.3193738,5.7708602 3.109375,6.6308594 2.6193755,6.980859 2.1096871,7.3707817 1.6796875,7.8007812 c -0.08,0.09 -0.71054648,0.668906 -0.3105469,0.3789063 h 0.011719 C 3.6308571,6.5796891 4.2804712,5.5 6.7304688,5.5 131.2194,5.5 255.70834,5.5 380.19727,5.5 c 2.44999,0 3.10156,1.0796891 5.35156,2.6796875 h 0.01 c 0.4,0.2899997 -0.23054,-0.2889063 -0.31054,-0.3789063 -0.43,-0.4299995 -0.93969,-0.8199222 -1.42969,-1.1699218 -1.21,-0.8599992 -2.73992,-2.5010941 -4.16992,-2.8710938 -1.09,-0.2899997 -2.64,0 -3.75,0 -121.62305,0 -243.2461,0 -364.869143,0 -0.832499,0 -1.9115636,-0.1638281 -2.8593751,-0.1230468 z"
+         sodipodi:nodetypes="sccccccccccccccs"
+         style="fill:#beaa8a;fill-opacity:1" />
+    </g>
+  </g>
+  <g
+     id="g522"
+     data-name="Capa_1"
+     transform="matrix(-1,0,0,1,386.92813,0)">
+    <g
+       class="cls-3"
+       clip-path="url(#clippath)"
+       id="g520" />
+  </g>
+</svg>

@@ -3,7 +3,22 @@
 
 body {
   font-family: Laski;
+  color: #ffffff;
 }
+
+hr {
+   display: block;
+   width: 100%;
+   margin-block-start: 0.5em;
+   margin-block-end: 0.5em;
+   margin-inline: auto;
+   border: none;
+   padding: 5px;
+   height: 1.5em; /* set this to your SVG’s intrinsic height */
+   background: url("./assets/art/hr.svg") no-repeat center;
+   background-size: 100% auto;
+ }
+ 
 
 body.kcBodyClass {
     background:
@@ -44,11 +59,11 @@ body.kcBodyClass {
         0 0 30px #BEAA8A,
         0 0 40px #BEAA8A;
     }
-  }
+}
   
-  .kcHeaderWrapperClass {
+.kcHeaderWrapperClass {
     animation: glow 1.5s ease-in-out infinite alternate;
-  }
+}
 
 #kc-locale-dropdown{
     display: none;
@@ -73,8 +88,16 @@ body.kcBodyClass {
     position: relative;
     box-shadow: inset 0 0 0 3px #BEAA8A;
     overflow: visible; /* so corners can stick out */
+  
+    background:
+      url('src/login/assets/art/banner_actor_cosmere_top_dark.webp') top center no-repeat,
+      url('src/login/assets/art/banner_actor_cosmere_bot_dark.webp') bottom center no-repeat,
+      url('src/login/assets/art/texture_sheet_cosmere_dark.webp') center/cover no-repeat;
+
   }
   
+  
+
   /* common corner style */
   .kcFormCardClass::before,
   .kcFormCardClass::after,
