@@ -1,6 +1,6 @@
-# Stormlight Archive Themed Login Field
+# Stormcloak
 
-A custom Keycloak login field inspired by *The Stormlight Archive*, built with [keycloakify](https://docs.keycloakify.dev).
+A custom Keycloak login theme inspired by *The Stormlight Archive*, built with [keycloakify](https://docs.keycloakify.dev).
 
 
 ## Screenshot
@@ -35,12 +35,40 @@ A custom Keycloak login field inspired by *The Stormlight Archive*, built with [
 3. Restart Keycloak:  
    ```bash
    bin/standalone.sh
-   ```  
+   ```
+
+### Running in containers
+
+You can mount the theme directly into keycloak, but make sure you have the `--auto-build` flag enabled. 
+
+```yaml
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:25.0.0
+    command:
+      - start
+      - --auto-build
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./keycloak-theme-for-kc-22-to-25.jar:/opt/keycloak/providers/keycloak-theme-for-kc-22-to-25.jar
+```
+
+Then, you can just bring the theme up.
+
+```bash
+docker-compose up
+```
 
 
 ## Customizing the theme
 
-For customization strategies and deep dives, see the [keycloakify documentation](https://docs.keycloakify.dev/customization-strategies).
+For customization, see the [keycloakify documentation](https://docs.keycloakify.dev/css-customization).
 
+## Acknowledgements
 
-[releases]: https://github.com/your-repo/keycloakify-theme/releases
+Many thanks to:
+- [Dragonsteel publishing](brandonsanderson.com) for bringing Brandon's work to the people. Many thanks!
+- [The Keycloakify developer(s)](https://github.com/keycloakify/keycloakify), it is an ease to use your software!
+- [The Metalworks](https://github.com/the-metalworks) community team working on the Cosmere Roleplaying Game. You make great character sheets!
+- [The Foundry VTT](https://foundryvtt.com/) team for their excellent piece of software, bringing TTRPGs to life! 
