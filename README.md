@@ -14,7 +14,7 @@ A custom Keycloak login theme inspired by *The Stormlight Archive*, built with [
 1. Grab the latest `keycloak-theme-for-kc-22-to-26.jar` from the [releases](https://github.com/r-neuschulz/stormcloak/releases).  
 2. Copy it into your Keycloak installation:  
    ```bash
-   cp keycloak-theme-for-kc-22-to-25.jar $KC_HOME/providers/
+   cp keycloak-theme-for-kc-22-to-26.jar $KC_HOME/providers/
    ```  
 3. Rebuild Keycloak so it picks up the new provider:  
    ```bash
@@ -44,14 +44,14 @@ You can mount the theme directly into keycloak, but make sure you have the `--au
 ```yaml
 services:
   keycloak:
-    image: quay.io/keycloak/keycloak:25.0.0
+    image: quay.io/keycloak/keycloak:latest
     command:
       - start
       - --auto-build
     ports:
       - "8080:8080"
     volumes:
-      - ./keycloak-theme-for-kc-22-to-25.jar:/opt/keycloak/providers/keycloak-theme-for-kc-22-to-26.jar
+      - ./keycloak-theme-for-kc-22-to-26.jar:/opt/keycloak/providers/keycloak-theme-for-kc-22-to-26.jar
 ```
 
 Then, you can bring the theme up, as usual with.
