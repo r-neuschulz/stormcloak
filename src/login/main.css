@@ -10,6 +10,9 @@ body.kcBodyClass {
         radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.8) 100%),
         url('./assets/Background.png') no-repeat center center fixed;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 
   }
 
