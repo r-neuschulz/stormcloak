@@ -1,3 +1,101 @@
-.kcLabelClass {
-    border: 3px solid red;
- }
+@import url(./assets/fonts/Laski/main.css);
+@import url(./assets/fonts/Penumbra/main.css);
+
+body {
+  font-family: Laski;
+}
+
+body.kcBodyClass {
+    background:
+        radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.8) 100%),
+        url('./assets/Background.png') no-repeat center center fixed;
+    background-size: cover;
+
+  }
+
+.kcHeaderWrapperClass {
+    display: none;
+} 
+
+#kc-info-wrapper {
+    background-color:transparent;
+}
+
+.kcSignUpClass {
+    background-color: none;
+}
+
+.kcButtonClass  {
+    font-family: Penumbra;
+}
+
+.kcFormCardClass.card-pf {
+    border-top-width: 0px;
+    position: relative;
+    box-shadow: inset 0 0 0 3px #BEAA8A;
+    overflow: visible; /* so corners can stick out */
+  }
+  
+  /* common corner style */
+  .kcFormCardClass::before,
+  .kcFormCardClass::after,
+  .kcFormCardClass form::before,
+  .kcFormCardClass form::after {
+    content: "";
+    position: absolute;
+    width: 50px;   /* your SVG size */
+    height: 50px;
+    background-color: #BEAA8A;
+    
+    /* Tint SVG via mask */
+    mask: url('./assets/svg/border_sheet_actor_corner.svg') no-repeat center;
+    mask-size: contain;
+    mask-mode: alpha;
+
+    /* WebKit support */
+    -webkit-mask: url('./assets/svg/border_sheet_actor_corner.svg') no-repeat center;
+    -webkit-mask-size: contain;
+    -webkit-mask-mode: alpha;
+}
+  
+  /* top-left */
+  .kcFormCardClass::before {
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+    overflow: visible;
+  }
+  
+  /* bottom-right */
+  .kcFormCardClass::after {
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+    overflow: visible;
+  }
+  
+  /* top-right */
+  .kcFormCardClass form::before {
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+    overflow: visible;
+  }
+  
+  /* bottom-left */
+  .kcFormCardClass form::after {
+    bottom: 0;
+    left: 0;
+    transform: rotate(270deg);
+    overflow: visible;
+  }
+
+.kcInfoAreaWrapperClass
+.kc-info-wrapper {
+    background-color: none;
+}
+
+/* .kcBodyClass  {
+    box-shadow: inset 0 0 0 3px #BEAA8A;
+    border-top: 0px;
+  } */ 

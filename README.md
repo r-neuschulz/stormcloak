@@ -43,3 +43,7 @@ To release a new version **just update the `package.json` version and push**.
 
 To enable the workflow go to your fork of this repository on GitHub then navigate to:
 `Settings` > `Actions` > `Workflow permissions`, select `Read and write permissions`.
+
+# Fonts
+
+LaskiSans and PenumbraSerifStd are only free for personal use. Make sure you license appropriately for commercial use.

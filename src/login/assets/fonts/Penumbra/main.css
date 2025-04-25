@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Penumbra';
+    src: url('./PenumbraSerifStd-Semibold.otf') format('opentype');
+    font-weight: 400;
+    /* For the Realm */
+    font-style: normal;
+}

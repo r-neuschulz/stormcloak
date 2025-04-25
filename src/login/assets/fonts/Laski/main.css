@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Laski';
+    src: url('./Laski_Sans_ExtraBold.otf') format('opentype');
+    font-weight: 900;
+    /* ExtraBold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Laski';
+    src: url('./Laski_Sans_Bold.otf') format('opentype');
+    font-weight: bold;
+    /* Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Laski';
+    src: url('./Laski_Sans_Light.otf') format('opentype');
+    font-weight: 300;
+    /* Light */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Laski';
+    src: url('./Laski_Sans_Book.otf') format('opentype');
+    font-weight: 500;
+    /* Book */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Laski';
+    src: url('./Laski_Sans_Regular.otf') format('opentype');
+    font-weight: 400;
+    /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Laski';
+    src: url('./Laski_Sans_SemiBold.otf') format('opentype');
+    font-weight: 600;
+    /* SemiBold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Laski';
+    src: url('./Laski_Sans_ExtraLight.otf') format('opentype');
+    font-weight: 100;
+    /* ExtraLight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Laski';
+    src: url('./Laski_Sans_Light.otf') format('opentype');
+    font-weight: 200;
+    /* Light */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Laski';
+    src: url('./Laski_Sans_Black.otf') format('opentype');
+    font-weight: 950;
+    /* Black */
+    font-style: normal;
+}
