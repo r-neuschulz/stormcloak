@@ -1,49 +1,46 @@
-A Stormlight Archive themed Keycloak Login Field, build with keycloakify.
+# Stormlight Archive Themed Login Field
 
-# Testing the theme locally
+A custom Keycloak login field inspired by *The Stormlight Archive*, built with [keycloakify](https://docs.keycloakify.dev).
 
-[Documentation](https://docs.keycloakify.dev/testing-your-theme)
 
-# How to customize the theme
+## Screenshot
 
-[Documentation](https://docs.keycloakify.dev/customization-strategies)
+![Screenshot](Screenshot 2025-04-25 172557.png)
 
-# Building the theme
+## Deploying the theme
 
-You need to have [Maven](https://maven.apache.org/) installed to build the theme (Maven >= 3.1.1, Java >= 7).The `mvn` command must be in the $PATH.
+### Keycloak 22 – 26 (Quarkus distribution)
 
-- On macOS: `brew install maven`
-- On Debian/Ubuntu: `sudo apt-get install maven`
-- On Windows: `choco install openjdk` and `choco install maven` (Or download from [here](https://maven.apache.org/download.cgi))
+1. Grab the `keycloak-theme-for-kc-22-to-25.jar` from the [releases].  
+2. Copy it into your Keycloak installation:  
+   ```bash
+   cp keycloak-theme-for-kc-22-to-25.jar $KC_HOME/providers/
+   ```  
+3. Rebuild Keycloak so it picks up the new provider:  
+   ```bash
+   bin/kc.sh build
+   ```  
+4. Start (or restart) Keycloak:  
+   ```bash
+   bin/kc.sh start
+   ```  
 
-```bash
-npm run build-keycloak-theme
-```
+### Keycloak 15 – 21 (legacy/WildFly distribution)
 
-Note that by default Keycloakify generates multiple .jar files for different versions of Keycloak.
-You can customize this behavior, see documentation [here](https://docs.keycloakify.dev/targeting-specific-keycloak-versions).
+1. Grab the same `keycloak-theme-for-kc-22-to-25.jar` from the [releases].  
+2. Copy it into WildFly’s deployments folder:  
+   ```bash
+   cp keycloak-theme-for-kc-22-to-25.jar $KC_HOME/standalone/deployments/
+   ```  
+3. Restart Keycloak:  
+   ```bash
+   bin/standalone.sh
+   ```  
 
-# Initializing the account theme
 
-```bash
-npx keycloakify initialize-account-theme
-```
+## Customizing the theme
 
-# Initializing the email theme
+For customization strategies and deep dives, see the [keycloakify documentation](https://docs.keycloakify.dev/customization-strategies).
 
-```bash
-npx keycloakify initialize-email-theme
-```
 
-# GitHub Actions
-
-The starter comes with a generic GitHub Actions workflow that builds the theme and publishes
-the jars [as GitHub releases artifacts](https://github.com/keycloakify/keycloakify-starter/releases/tag/v10.0.0).
-To release a new version **just update the `package.json` version and push**.
-
-To enable the workflow go to your fork of this repository on GitHub then navigate to:
-`Settings` > `Actions` > `Workflow permissions`, select `Read and write permissions`.
-
-# Fonts
-
-LaskiSans and PenumbraSerifStd are only free for personal use. Make sure you license appropriately for commercial use.
+[releases]: https://github.com/your-repo/keycloakify-theme/releases
