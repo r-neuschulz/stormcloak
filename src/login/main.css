@@ -13,9 +13,46 @@ body.kcBodyClass {
 
   }
 
+  #kc-header-wrapper {
+    color: #ffffff; /* base text color */
+    font-size: xx-large;
+}
+
 .kcHeaderWrapperClass {
+    font-family: Penumbra;
+    color: #ffffff; /* base text color */
+    text-shadow:
+      0 0 10px #BEAA8A,
+      0 0 20px #BEAA8A,
+      0 0 30px #BEAA8A;
+  }
+  
+  /* Pulsing glow */
+  @keyframes glow {
+    0% {
+      text-shadow:
+        0 0 10px #BEAA8A,
+        0 0 20px #BEAA8A,
+        0 0 30px #BEAA8A;
+    }
+    100% {
+      text-shadow:
+        0 0 20px #BEAA8A,
+        0 0 30px #BEAA8A,
+        0 0 40px #BEAA8A;
+    }
+  }
+  
+  .kcHeaderWrapperClass {
+    animation: glow 1.5s ease-in-out infinite alternate;
+  }
+
+#kc-locale-dropdown{
     display: none;
-} 
+}
+
+.kcFormHeaderClass {
+}
 
 #kc-info-wrapper {
     background-color:transparent;
@@ -27,6 +64,7 @@ body.kcBodyClass {
 
 .kcButtonClass  {
     font-family: Penumbra;
+    border-radius: 8px
 }
 
 .kcFormCardClass.card-pf {
