@@ -5,13 +5,13 @@ A custom Keycloak login field inspired by *The Stormlight Archive*, built with [
 
 ## Screenshot
 
-![Screenshot](Screenshot 2025-04-25 172557.png)
+![Screenshot](Screenshot.png)
 
 ## Deploying the theme
 
 ### Keycloak 22 – 26 (Quarkus distribution)
 
-1. Grab the `keycloak-theme-for-kc-22-to-25.jar` from the [releases].  
+1. Grab the latest `keycloak-theme-for-kc-22-to-25.jar` from the [releases](https://github.com/r-neuschulz/stormcloak/releases).  
 2. Copy it into your Keycloak installation:  
    ```bash
    cp keycloak-theme-for-kc-22-to-25.jar $KC_HOME/providers/
@@ -27,10 +27,10 @@ A custom Keycloak login field inspired by *The Stormlight Archive*, built with [
 
 ### Keycloak 15 – 21 (legacy/WildFly distribution)
 
-1. Grab the same `keycloak-theme-for-kc-22-to-25.jar` from the [releases].  
+1. Grab the latest ` keycloak-theme-for-kc-all-other-versions.jar ` from the [releases](https://github.com/r-neuschulz/stormcloak/releases).  
 2. Copy it into WildFly’s deployments folder:  
    ```bash
-   cp keycloak-theme-for-kc-22-to-25.jar $KC_HOME/standalone/deployments/
+   cp  keycloak-theme-for-kc-all-other-versions.jar $KC_HOME/standalone/deployments/
    ```  
 3. Restart Keycloak:  
    ```bash
