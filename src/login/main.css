@@ -90,9 +90,9 @@ body.kcBodyClass {
     overflow: visible; /* so corners can stick out */
   
     background:
-      url('src/login/assets/art/banner_actor_cosmere_top_dark.webp') top center no-repeat,
-      url('src/login/assets/art/banner_actor_cosmere_bot_dark.webp') bottom center no-repeat,
-      url('src/login/assets/art/texture_sheet_cosmere_dark.webp') center/cover no-repeat;
+      url('src/login/assets/art/banner_actor_cosmere_top_dark.png') top center no-repeat,
+      url('src/login/assets/art/banner_actor_cosmere_bot_dark.png') bottom center no-repeat,
+      url('src/login/assets/art/texture_sheet_cosmere_dark.png') center/cover no-repeat;
 
   }
   
