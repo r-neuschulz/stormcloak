@@ -14,7 +14,7 @@ hr {
    margin-inline: auto;
    border: none;
    padding: 5px;
-   height: 1.5em; /* set this to your SVG’s intrinsic height */
+   height: 1.5em;
    background: url("./assets/art/hr.svg") no-repeat center;
    background-size: 100% auto;
  }
@@ -23,7 +23,7 @@ hr {
 body.kcBodyClass {
     background:
         radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.8) 100%),
-        url('./assets/Background.png') no-repeat center center fixed;
+        url("./assets/art/Background.png") no-repeat center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -90,9 +90,9 @@ body.kcBodyClass {
     overflow: visible; /* so corners can stick out */
   
     background:
-      url('./assets/art/banner_actor_cosmere_top_dark.png') top center no-repeat,
-      url('./assets/art/banner_actor_cosmere_bot_dark.png') bottom center no-repeat,
-      url('./assets/art/texture_sheet_cosmere_dark.png') center/cover no-repeat;
+      url("./assets/art/banner_actor_cosmere_top_dark.png") top center no-repeat,
+      url("./assets/art/banner_actor_cosmere_bot_dark.png") bottom center no-repeat,
+      url("./assets/art/texture_sheet_cosmere_dark.png") center/cover no-repeat;
 
   }
   
@@ -105,7 +105,7 @@ body.kcBodyClass {
   .kcFormCardClass form::after {
     content: "";
     position: absolute;
-    width: 50px;   /* your SVG size */
+    width: 50px;
     height: 50px;
     background-color: #BEAA8A;
     
