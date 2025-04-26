@@ -44,10 +44,6 @@ jobs:
             - uses: actions/setup-node@v4
             - uses: bahmutov/npm-install@v1
             - run: npm run build-keycloak-theme
-            - name: Rename 22-to-25 JAR to 22-to-26
-              run: |
-                    mv dist_keycloak/keycloak-theme-for-kc-22-to-25.jar \
-                    dist_keycloak/keycloak-theme-for-kc-22-to-26.jar
             - uses: softprops/action-gh-release@v2
               with:
                   name: Release v${{ needs.check_if_version_upgraded.outputs.to_version }}
