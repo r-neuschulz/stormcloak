@@ -80,7 +80,10 @@ body.kcBodyClass {
 
 .kcButtonClass  {
     font-family: Penumbra;
-    border-radius: 8px
+    border-radius: 8px;
+    margin-right: 10px; 
+    padding-top: 6px;
+    padding-bottom: 5px;
 }
 
 .kcFormCardClass.card-pf {
@@ -143,6 +146,14 @@ body.kcBodyClass {
     transform: rotate(90deg);
     overflow: visible;
   }
+
+  /* top-right */
+  .kcFormCardClass card-pf::before {
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+    overflow: visible;
+  }
   
   /* bottom-left */
   .kcFormCardClass form::after {
@@ -156,6 +167,15 @@ body.kcBodyClass {
 .kc-info-wrapper {
     background-color: none;
 }
+
+#kc-info-wrapper{
+  color:#ffffff;
+}
+
+.login-pf-page .card-pf p {
+    color: #ffffff;
+}
+
 
 /* .kcBodyClass  {
     box-shadow: inset 0 0 0 3px #BEAA8A;
