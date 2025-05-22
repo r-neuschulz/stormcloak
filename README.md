@@ -8,12 +8,12 @@ A custom Keycloak login theme inspired by *The Stormlight Archive*, built with [
 
 ## Deploying the theme
 
-### Keycloak 22 – 26 (Quarkus distribution)
+### Keycloak 22 – 25 (Quarkus distribution)
 
-1. Grab the latest `keycloak-theme-for-kc-22-to-26.jar` from the [releases](https://github.com/r-neuschulz/stormcloak/releases).
+1. Grab the latest `keycloak-theme-for-kc-22-to-25.jar` from the [releases](https://github.com/r-neuschulz/stormcloak/releases).
 2. Copy it into your Keycloak installation:
    ```bash
-   cp keycloak-theme-for-kc-22-to-26.jar $KC_HOME/providers/
+   cp keycloak-theme-for-kc-22-to-25.jar $KC_HOME/providers/
    ```
 3. Rebuild Keycloak so it picks up the new provider:
    ```bash
@@ -24,7 +24,7 @@ A custom Keycloak login theme inspired by *The Stormlight Archive*, built with [
    bin/kc.sh start
    ```
 
-### Keycloak 15 – 21 (legacy/WildFly distribution)
+### Keycloak 15 – 21 (legacy/WildFly distribution) and 26
 
 1. Grab the latest `keycloak-theme-for-kc-all-other-versions.jar` from the [releases](https://github.com/r-neuschulz/stormcloak/releases).
 2. Copy it into WildFly’s deployments folder:
@@ -38,7 +38,7 @@ A custom Keycloak login theme inspired by *The Stormlight Archive*, built with [
 
 ### Running in containers
 
-You can mount the theme directly into keycloak, but make sure you have the `--auto-build` flag enabled.
+You can mount the theme directly into keycloak.
 
 ```yaml
 services:
@@ -46,14 +46,13 @@ services:
     image: quay.io/keycloak/keycloak:latest
     command:
       - start
-      - --auto-build
     ports:
       - "8080:8080"
     volumes:
-      - ./keycloak-theme-for-kc-22-to-26.jar:/opt/keycloak/providers/keycloak-theme-for-kc-22-to-26.jar
+      - ./keycloak-theme-for-kc-all-other-versions:/opt/keycloak/providers/keycloak-theme-for-kc-all-other-versions.jar
 ```
 
-Then, you can bring the theme up, as usual with.
+Then, you can bring keycloak with the new theme up, as usual with.
 
 ```bash
 docker-compose up
