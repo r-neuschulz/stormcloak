@@ -9,5 +9,11 @@ export default defineConfig({
         keycloakify({
             accountThemeImplementation: "none"
         })
-    ]
+    ],
+    server: {
+        watch: {
+            usePolling: true,
+            interval: 100
+        }
+    }
 });
