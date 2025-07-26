@@ -181,3 +181,27 @@ body.kcBodyClass {
     box-shadow: inset 0 0 0 3px #BEAA8A;
     border-top: 0px;
   } */ 
+
+
+
+/* More specific selectors */
+i.kcFormPasswordVisibilityIconShow.fa-eye::before {
+    content: "" !important;
+    background: url("./assets/art/double_eye_opti.png?v=1") no-repeat center !important;
+    background-size: 20px auto !important;
+    display: inline-block !important;
+    width: 20px !important;
+    height: 20px !important;
+    vertical-align: middle !important;
+}
+
+i.kcFormPasswordVisibilityIconHide.fa-eye-slash::before {
+    content: "" !important;
+    background: url("./assets/art/double_eye_crossed_out_opti.png?v=1") no-repeat center !important;
+    background-size: 20px auto !important;
+    display: inline-block !important;
+    width: 20px !important;
+    height: 20px !important;
+    vertical-align: middle !important;
+}
+
