@@ -20,7 +20,9 @@ hr {
  }
  
 
-body.kcBodyClass {
+/* The consent page (login-oauth-grant) has the body class "oauth" instead of kcBodyClass. */
+body.kcBodyClass,
+body.oauth {
     background:
         radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.8) 100%),
         url("./assets/art/Background.webp") no-repeat center center fixed;
